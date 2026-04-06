@@ -1,0 +1,193 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #35c9c2, #4dd6a1);
+    color: #ffffff;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+}
+
+
+/* imagenes paginas */
+
+.imagen-seccion:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.imagen-seccion{
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.imagen-seccion{
+    width:100%;
+    max-width:400px;
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.imagen-pequena:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.imagen-pequena{
+width:250px;
+display:block;
+margin:20px auto;
+border-radius:10px;
+}
+
+.imagen-pequena{
+    width:100%;
+    max-width:270px;
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.imagen-media:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.imagen-media{
+width:220px;
+display:block;
+margin:30px auto;
+border-radius:15px;
+}
+
+.imagen-media{
+    width:100%;
+    max-width:220px;
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Tabla historial */
+
+.tabla-historial{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.tabla-historial th,
+.tabla-historial td{
+border:1px solid #ddd;
+padding:10px;
+text-align:center;
+}
+
+.tabla-historial th{
+background-color:#168BCC;
+color:white;
+}
+
+.tabla-historial tr:nth-child(even){
+background-color:#56998E;
+}
+
+
+
+/* Tarjetas */
+
+.card{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.card span {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Menú inferior */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottom-menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bottom-menu button:hover {
+    text-decoration: underline;
+}
