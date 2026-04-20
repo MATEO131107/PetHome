@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | PetHome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">PetHome</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="recordatorios.html">Recordatorios</a>
+        <a href="contacto.html" class="btn btn-outline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-section">
+    <div class="container">
+
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <div class="page-hero-text">
+            <span class="tag">Ayuda</span>
+            <h1>Contáctanos</h1>
+            <p>
+              Si tienes dudas, sugerencias o necesitas ayuda con el cuidado
+              y seguimiento de tu mascota, puedes escribirnos aquí.
+            </p>
+          </div>
+
+              </section>
+
+      <section class="content-grid">
+        <article class="content-card">
+          <div class="section-heading">
+            <h2>Envíanos un mensaje</h2>
+            <p>Completa el formulario y te responderemos pronto.</p>
+          </div>
+
+          <form onsubmit="return validarFormulario()" class="contact-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="Ingresa tu correo">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </article>
+
+        <article class="content-card">
+          <div class="section-heading">
+            <h2>Información de contacto</h2>
+            <p>También puedes comunicarte por estos medios.</p>
+          </div>
+
+          <ul class="info-list">
+            <li><strong>Correo:</strong> contacto@pethome.com</li>
+            <li><strong>Teléfono:</strong> +57 300 123 4567</li>
+            <li><strong>Horario:</strong> Lunes a viernes, 8:00 a.m. - 5:00 p.m.</li>
+            <li><strong>Ubicación:</strong> Pereira, Risaralda</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="content-card tips-section">
+        <div class="section-heading">
+          <h2>Antes de escribirnos</h2>
+          <p>Estas recomendaciones ayudan a que la atención sea más rápida.</p>
+        </div>
+
+        <ul class="tips-list">
+          <li>Escribe tu nombre y correo correctamente.</li>
+          <li>Describe tu duda de forma clara.</li>
+          <li>Revisa que todos los campos estén completos.</li>
+        </ul>
+      </section>
+
+      <p class="separador-texto">
+        Gracias por usar PetHome. Puedes volver al inicio o seguir revisando las demás secciones del sitio.
+      </p>
+
+      <section class="page-navigation">
+        <a href="mascotas.html" class="btn btn-secondary">Anterior: Mascotas</a>
+        <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>PetHome</h3>
+        <p>Rutinas, salud y bienestar para el cuidado diario de tus mascotas.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

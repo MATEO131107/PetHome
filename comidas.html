@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comidas | PetHome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">PetHome</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="recordatorios.html">Recordatorios</a>
+        <a href="contacto.html" class="btn btn-outline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-section">
+    <div class="container">
+
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <div class="page-hero-text">
+            <span class="tag">Alimentación</span>
+            <h1>Control de comidas de tu mascota</h1>
+            <p>
+              Organiza las porciones del día, consulta horarios recomendados
+              y mantén una rutina de alimentación más saludable.
+            </p>
+          </div>
+
+          <div class="page-hero-media">
+            <img src="comidas.png" alt="Alimentación para mascotas" class="hero-image imagen-grande">
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="content-card">
+          <div class="section-heading">
+            <h2>Cálculo diario</h2>
+            <p>Ingresa la cantidad de alimento por cada momento del día.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="num1">Comida de la mañana</label>
+              <input type="number" id="num1" placeholder="Ej. 120">
+            </div>
+
+            <div class="form-group">
+              <label for="num2">Comida de la tarde</label>
+              <input type="number" id="num2" placeholder="Ej. 100">
+            </div>
+
+            <div class="form-group">
+              <label for="num3">Comida de la noche</label>
+              <input type="number" id="num3" placeholder="Ej. 80">
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <button class="btn btn-primary" onclick="sumarDatos()">Calcular total</button>
+            <button class="btn btn-secondary" onclick="promedioDatos()">Calcular promedio</button>
+          </div>
+
+          <p id="resultado" class="result-box"></p>
+        </article>
+
+        <aside class="content-card">
+          <div class="section-heading">
+            <h2>Horario sugerido</h2>
+            <p>Una rutina estable ayuda a mejorar la digestión y el bienestar.</p>
+          </div>
+
+          <ul class="info-list">
+            <li><strong>Desayuno:</strong> 8:00 AM</li>
+            <li><strong>Almuerzo:</strong> 1:00 PM</li>
+            <li><strong>Cena:</strong> 7:00 PM</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="content-card tips-section">
+        <div class="section-heading">
+          <h2>Recomendaciones</h2>
+          <p>Consejos básicos para una alimentación más adecuada.</p>
+        </div>
+
+        <ul class="tips-list">
+          <li>Usa alimento balanceado según edad, tamaño y nivel de actividad.</li>
+          <li>Mantén siempre agua fresca disponible.</li>
+          <li>Evita cambios bruscos en la dieta.</li>
+          <li>Consulta al veterinario si necesitas ajustar porciones.</li>
+        </ul>
+      </section>
+
+      <section class="page-navigation">
+        <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+        <a href="paseos.html" class="btn btn-primary">Siguiente: Paseos</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>PetHome</h3>
+        <p>Organiza la rutina diaria de tu mascota de forma simple y visual.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
