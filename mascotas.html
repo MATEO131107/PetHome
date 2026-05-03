@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mascotas | PetHome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">PetHome</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="recordatorios.html">Recordatorios</a>
+        <a href="contacto.html" class="btn btn-outline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-section">
+    <div class="container">
+
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <div class="page-hero-text">
+            <span class="tag">Registro</span>
+            <h1>Mascota registrada</h1>
+            <p>
+              Aquí puedes ver la información principal de tu mascota registrada
+              dentro de PetHome.
+            </p>
+          </div>
+
+          <div class="page-hero-media">
+            <img src="mascotas.png" alt="Mascota registrada en PetHome" class="hero-image imagen-grande">
+          </div>
+        </div>
+      </section>
+
+      <section class="content-card">
+        <div class="section-heading">
+          <h2>Tu mascota</h2>
+          <p>Actualmente tienes una mascota registrada en el sistema.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card mascota-card">
+            <span>🐶</span>
+            <h3>Max</h3>
+            <p><strong>Edad:</strong> 3 años</p>
+            <p><strong>Tipo:</strong> Perro</p>
+            <p><strong>Raza:</strong> Criollo</p>
+            <p><strong>Estado:</strong> Activo</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-card tips-section">
+        <div class="section-heading">
+          <h2>Información del registro</h2>
+          <p>Estos son los datos principales visibles para identificar a Max.</p>
+        </div>
+
+        <ul class="info-list">
+          <li><strong>Nombre:</strong> Max.</li>
+          <li><strong>Edad:</strong> 3 años.</li>
+          <li><strong>Especie:</strong> Perro.</li>
+          <li><strong>Raza:</strong> Criollo.</li>
+        </ul>
+      </section>
+
+<button onclick="exportarMascotaPDF()">Exportar PDF</button>
+
+      <p class="separador-texto">
+        Continúa navegando para revisar el historial, recordatorios y demás apartados del cuidado de Max.
+      </p>
+
+      <section class="page-navigation">
+        <a href="historial.html" class="btn btn-secondary">Anterior: Historial</a>
+        <a href="contacto.html" class="btn btn-primary">Siguiente: Contacto</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>PetHome</h3>
+        <p>Rutinas, salud y bienestar para el cuidado diario de tus mascotas.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

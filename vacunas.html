@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacunas | PetHome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">PetHome</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="recordatorios.html">Recordatorios</a>
+        <a href="contacto.html" class="btn btn-outline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-section">
+    <div class="container">
+
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <div class="page-hero-text">
+            <span class="tag">Salud preventiva</span>
+            <h1>Control de vacunas y dosis recomendadas</h1>
+            <p>
+              Lleva un mejor seguimiento de la salud de tu mascota y calcula
+              una dosis estimada según su peso y la indicación ingresada.
+            </p>
+          </div>
+
+          <div class="page-hero-media">
+            <img src="vacunas.png" alt="Vacunación de mascota" class="hero-image imagen-media">
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="content-card">
+          <div class="section-heading">
+            <h2>Calculadora de dosis</h2>
+            <p>Ingresa el peso de tu mascota y la dosis recomendada por kilo.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="peso">Peso de la mascota (kg)</label>
+              <input type="number" id="peso" placeholder="Ej. 12">
+            </div>
+
+            <div class="form-group">
+              <label for="dosis">Dosis por kg (ml)</label>
+              <input type="number" id="dosis" placeholder="Ej. 0.5">
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <button class="btn btn-primary" onclick="calcularDosis()">Calcular dosis</button>
+          </div>
+
+          <p id="resultado" class="result-box"></p>
+        </article>
+
+<button onclick="exportarVacunasPDF()">Exportar PDF</button>
+
+        <article class="content-card">
+          <div class="section-heading">
+            <h2>Vacunas frecuentes</h2>
+            <p>Algunas vacunas comunes que suelen formar parte del control básico.</p>
+          </div>
+
+          <ul class="info-list">
+            <li><strong>Rabia:</strong> protección obligatoria en muchos casos.</li>
+            <li><strong>Parvovirus:</strong> clave en cachorros.</li>
+            <li><strong>Moquillo:</strong> importante en el esquema inicial.</li>
+            <li><strong>Refuerzo anual:</strong> seguimiento según indicación veterinaria.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="content-card tips-section">
+        <div class="section-heading">
+          <h2>Recomendaciones</h2>
+          <p>Consejos prácticos para mantener un control preventivo responsable.</p>
+        </div>
+
+        <ul class="tips-list">
+          <li>Consulta siempre al veterinario antes de aplicar cualquier medicamento.</li>
+          <li>Guarda fechas y tipos de vacuna aplicados.</li>
+          <li>No automediques a tu mascota.</li>
+          <li>Respeta refuerzos y controles periódicos.</li>
+        </ul>
+      </section>
+
+      <section class="page-navigation">
+        <a href="paseos.html" class="btn btn-secondary">Anterior: Paseos</a>
+        <a href="veterinarias.html" class="btn btn-primary">Siguiente: Veterinarias</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>PetHome</h3>
+        <p>Rutinas, salud y bienestar para el cuidado diario de tus mascotas.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
